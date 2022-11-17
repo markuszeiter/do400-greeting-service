@@ -25,7 +25,7 @@ stage('Deploy') {
     steps {
 sh '''
 oc project rucdyw-greetings
-oc start-build greeting-service --follow --wait
+oc start-build greeting-services --follow --wait
 ''' }
 }
 
